@@ -1,0 +1,1640 @@
+/*Style sheet
+
+styling for index page*/
+body:not(.bstyle) {
+  /*background styling*/
+  background-image: url(img/indexfish.jpg);
+  background-color: #bbeeee; /*Used when background image unavaliable*/
+  background-position: center;
+  
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.Bred {
+  position: absolute;
+  background-position: center;
+  background-color: #E45537;
+  height: 100vh;
+  width: 100%;
+}
+
+.Bblue {
+  position: absolute;
+  background-position: center;
+  background-color: #0080FF;
+  height: 100vh;
+  width: 100%;
+}
+
+.Baqua {
+  position: absolute;
+  background-position: center;
+  background-color: #37ABE4;
+  height: 100vh;
+  width: 100%;
+}
+
+.Byellow {
+  position: absolute;
+  background-position: center;
+  background-color: #FFFF99;
+  height: 100vh;
+  width: 100%;
+}
+
+.Bpink {
+  position: absolute;
+  background-position: center;
+  background-color: #FFCCFF;
+  height: 100vh;
+  width: 100%;
+}
+
+.learn {
+  /*learn more button*/
+  position: absolute;
+  top: 6%;
+  right: 2%;
+  list-style: none;
+  animation: learn-load 1s ease-in;
+}
+
+@keyframes learn-load {
+  /*Learn more button loading animation*/
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.learn li a {
+  /*Learn more button styling*/
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  padding: 15px 22px;
+  border: 3.5px solid white;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.learn li a:hover {
+  /*learn more button hover affect*/
+  background-color: white;
+  color: black;
+}
+
+.indexBox {
+  /*title and signup + login buttons*/
+  position: absolute;
+  top: 40%;
+  left: 7%;
+  height: 35%;
+  color: white;
+  animation: title-load 500ms ease-in;
+}
+
+@keyframes title-load {
+  /*loading animation for title and signup + login buttons*/
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.indexwelcome {
+  /*welcome message*/
+  font-size: 25px;
+}
+
+h1 {
+  /*title*/
+  font-size: 125px;
+  line-height: 175px;
+  font-family: "Fjalla One", sans-serif;
+}
+
+.indexNAV ul li a {
+  /*Signup and login buttons*/
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  padding: 15px 22px;
+  border: 4px solid white;
+  border-radius: 30px;
+  font-size: 15px;
+  transition: 0.5s;
+}
+
+.indexNAV li {
+  /*Signup and login buttons*/
+  display: inline-block;
+  margin: 20px 25px;
+}
+
+.indexNAV {
+  /*Signup and login buttons*/
+  position: absolute;
+  left: -3%;
+}
+
+.indexNAV ul li a:hover {
+  /*Signup and login buttons animation*/
+  padding: 25px 35px;
+  border-radius: 60px;
+  background-color: rgba(0, 0, 40, 0.5);
+  font-size: 22px;
+}
+
+/*signup & login page box styling*/
+.signup {
+  width: 500px;
+  height: 600px;
+  background-color: #e6eef2;
+  text-align: center;
+  border-radius: 40px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin-top: -300px;
+  margin-left: -250px;
+  animation: signup-load 500ms ease-in;
+}
+
+@keyframes signup-load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.signup h2 {
+  /*styling the signup & login title*/
+  line-height: 70px;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Fjalla One", sans-serif;
+  border-bottom: 1px solid slategrey;
+  animation: form-load 2s;
+}
+
+@keyframes form-load {
+  /*loading animation for signup and login title*/
+  0% {
+    color: black;
+  }
+  50% {
+    color: #2885a9;
+  }
+  100% {
+    color: black;
+  }
+}
+
+.signup input[type="text"],
+.signup input[type="password"] {
+  /*input box styling for sign up and login*/
+  border: 0;
+  background: none;
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+  border: 2px solid #2885a9;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  border-radius: 24px;
+  color: black;
+  transition: 0.25s;
+}
+
+.signup input[type="text"]:focus,
+.signup input[type="password"]:focus {
+  /*animation for input boxes*/
+  width: 280px;
+  border-color: #2ecc71;
+  color: #102a43;
+}
+
+.signup button[type="submit"] {
+  /*the submit buttons for signup and login*/
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  border-radius: 24px;
+  color: black;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.signup button[type="submit"]:hover {
+  /*submit button hover animation*/
+  background: #2ecc71;
+}
+
+.error {
+  /*error message styling*/
+  color: #4b0117;
+  line-height: 50px;
+  background-color: #ff7b7b;
+  text-align: center;
+}
+
+.ceop {
+  /*ceop button styling*/
+  width: 120px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.ceop2 {
+  /*ceop button positioning*/
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  margin: 7px;
+  max-width: 10%;
+  max-height: 10%;
+}
+
+.HOME {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 34%;
+  background-color: #d9d9d9;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 1vw;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, rgba(40, 133, 169, .4), rgba(46, 204, 113, .4));
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom,rgba(40, 133, 169, .7), rgba(46, 204, 113, .7));
+}
+::-webkit-scrollbar-track {
+  background: white;
+  border-left: lightgray 1px solid;
+}
+
+.hSideBar {
+  position: absolute;
+  width: 16%;
+  left: 18%;
+  height: 100%;
+  background-color: #353535;
+}
+
+.user {
+  color: #bfdbf7;
+  font-size: 20px;
+  text-align: center;
+  padding: 35px 5px 35px 5px;
+  border-bottom: 2px solid slategrey;
+}
+
+.homeNAV {
+  animation: signup-load 500ms ease-in;
+}
+
+.homeNAV ul li a {
+  /*Side bar buttons*/
+  display: block;
+  margin: 50px auto;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #2885a9;
+  padding: 15px 4px;
+  border-radius: 24px;
+  color: white;
+  width: 60%;
+  transition: 0.2s ease-in;
+}
+
+.homeNAV ul li a:hover {
+  width: 75%;
+  border-color: #2ecc71;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hSideBar  h2, .hSideBar2 h2 {
+  color: white;
+  font-size: 35px;
+  padding: 35px 5px 20px 5px;
+  text-align: center;
+  font-family: "Fjalla One", sans-serif;
+}
+
+.contact {
+  font-size: 20px;
+  line-height: 50px;
+  animation: load-contact 1.5s;
+}
+
+@keyframes load-contact {
+  0% {
+    color: white;
+  }
+  100% {
+    color: black;
+  }
+}
+
+.back {
+  position: absolute;
+  top: 4%;
+  left: 2%;
+  text-decoration: none;
+  color: white;
+  padding: 15px 22px;
+  border: 3.5px solid white;
+  border-radius: 30px;
+  font-size: 15px;
+  transition: 0.5s;
+  animation: learn-load 1s ease-in;
+}
+
+.back:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-color: #2ecc71;
+}
+
+.sent {
+  color: #76c7e7;
+  padding-bottom: 10px;
+}
+
+.recieved {
+  color: #64ec41;
+  padding-bottom: 10px;
+}
+
+.profileP {
+  position: absolute;
+  width: 55%;
+  height: 60%;
+  background-color: white;
+  left: 5%;
+  top: 35%;
+  border-radius: 2%;
+  text-align: center;
+}
+
+.profileP2 {
+  position: absolute;
+  width: 30%;
+  height: 60%;
+  background-color: white;
+  right: 5%;
+  top: 35%;
+  border-radius: 2%;
+  font-size: 20px;
+}
+
+.propics {
+  width: 70%;
+  height: max-content;
+  background-color: white;
+  left: 14%;
+  position: relative;
+  padding: 5px;
+  margin-bottom: 7px;
+}
+
+.propics a:not(#report, #adminName, #addfren, .sentreq){
+  position: relative;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  left: 20px;
+  bottom: 35px;
+  transition: 0.25s;
+}
+
+.propics a:hover:not(#report, #addfren, .sentreq) {
+  color: #2885a9;
+  font-size: 25px;
+}
+
+.propics img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: 0.25s;
+}
+
+.propics img:hover {
+  border-radius: 25%;
+}
+
+.profpics img {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+}
+
+.profpics {
+  position: absolute;
+  top: 35%;
+  right: 7%;
+  z-index: 1;
+}
+
+.propicsChat {
+  position: relative;
+  left: 80px;
+  bottom: 25px;
+  color: slategray;
+  width: 70%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#report {
+  position: absolute;
+  font-size: 13px;
+  right: 7%;
+  bottom: 60px;
+  color: darkred;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.25s;
+}
+#report:hover {
+  color: #4b0117;
+  text-decoration: underline;
+}
+
+#adminName {
+  color: #2885a9;
+  position: relative;
+  list-style: none;
+  text-decoration: none;
+  font-size: 20px;
+  left: 20px;
+  bottom: 35px;
+  transition: 0.25s;
+}
+
+.profback {
+  position: absolute;
+  background-color: #699bc2;
+  background-image: linear-gradient(to bottom, rgba(112, 148, 165, 0.5), rgba(13, 31, 42, 1)), url(img/bubble.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 60%;
+}
+
+.namehello {
+  position: absolute;
+  left: 5%;
+  top: 13%;
+  font-size: 75px;
+  line-height: 100px;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  max-width: 90%;
+  max-height: 90px;
+  overflow: hidden;
+}
+
+.parhello {
+  position: absolute;
+  left: 5%;
+  top: 25%;
+  line-height: 30px;
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #dedbdf;
+  max-width: 80%;
+}
+
+#margLeft {
+  margin-left: 1.5%;
+}
+
+.account {
+  line-height: 50px;
+  font-size: 20px;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  border-bottom: slategray 1px solid;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.proftitle {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 50px;
+}
+
+.editAccount input[type="text"],
+.editAccount input[type="password"] {
+  /*input box styling for sign up and login*/
+  border: 0;
+  background: none;
+  margin: 10px auto;
+  text-align: center;
+  border: 2px solid #2885a9;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  border-radius: 24px;
+  color: black;
+  transition: 0.25s;
+}
+
+.editAccount input[type="text"]:focus {
+  /*animation for input boxes*/
+  width: 280px;
+  border-color: #2ecc71;
+  color: #102a43;
+}
+
+.editAccount input[type="password"]:focus {
+  /*animation for input boxes*/
+  width: 240px;
+  border-color: #2ecc71;
+  color: #102a43;
+}
+
+.editAccount button[type="submit"] {
+  /*the submit buttons for signup and login*/
+  border: 0;
+  background: none;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  border-radius: 24px;
+  color: black;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.editAccount button[type="submit"]:hover {
+  /*submit button hover animation*/
+  background: #2ecc71;
+}
+
+.filters {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  margin-bottom: 10px;
+  z-index: 1;
+  border-bottom: #2885a9 2px solid;
+}
+
+.filters input {
+  position: absolute;
+  top: 15%;
+  right: 90px;
+  border: 0;
+  background: none;
+  text-align: center;
+  border: 2px solid #2885a9;
+  padding: 14px 10px;
+  width: 175px;
+  outline: none;
+  border-radius: 24px;
+  color: black;
+  transition: 0.25s;
+}
+.filters input:focus {
+  /*animation for input boxes*/
+  border-color: #2ecc71;
+}
+
+.filters button {
+  position: absolute;
+  top: 20%;
+  right: 12px;
+  border: 0;
+  background: none;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 10px;
+  outline: none;
+  border-radius: 20px;
+  color: black;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.filters button:hover {
+  /*submit button hover animation*/
+  background: #2ecc71;
+}
+
+.filtFriends {
+  position: absolute;
+  top: 20%;
+  left: 12%;
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  border: #2ecc71 2px solid;
+  border-radius: 20px;
+  padding: 10px;
+  color: black;
+  transition: 0.25s;
+}
+.filtFriends:hover {
+  background-color: #2ecc71;
+}
+
+.reportP {
+  margin: 50px;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Bubblegum Sans', cursive;
+  color: #2350A8;
+}
+
+.reportDone {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  line-height: 90px;
+  font-size: 30px;
+  text-align: center;
+  background-color: azure;
+  color: #2885a9;
+}
+
+#ReportInput {
+  width: 300px;
+}
+
+.sideprofile {
+  position: relative;
+  top: 35%;
+  text-align: center;
+}
+
+.modal-dim {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  animation: slowAppear 250ms;
+}
+
+.modal-content {
+  position: relative;
+  width: 700px;
+  height: 500px;
+  background-color: white;
+  border-radius: 3%;
+  z-index: 11;
+  text-align: center;
+}
+
+.modal-content h2 {
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+}
+
+.close {
+  color: black;
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  text-decoration: none;
+  font-size: 45px;
+  font-weight: 600;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+@keyframes slowAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#white {
+  color: white
+}
+
+#addfren {
+  position: absolute;
+  font-size: 17px;
+  left: 2%;
+  bottom: 7px;
+  color: cornflowerblue;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.25s;
+}
+#addfren:hover, .sentreq:hover {
+  color: lightgreen;
+  font-size: 20px;
+}
+
+.sentreq {
+  color: #2350A8;
+  position: absolute;
+  font-size: 17px;
+  left: 2%;
+  bottom: 7px;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.25s;
+}
+
+.msgBubble {
+  background-color: rgb(104, 103, 103);
+  border-radius: 30px;
+  padding: 15px 20px 3px 17px;
+  max-width: max-content;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.msg {
+  color: white;
+}
+
+.chatbar {
+  position: absolute;
+  bottom: 0;
+  left: 34%;
+  width: 50%;
+  height: 10%;
+  background-color: #353535;
+  border-top: #2885a9 2px solid;
+}
+
+.chatbar input {
+  position: absolute;
+  left: 5%;
+  top: 20%;
+  border: 0;
+  background: rgba(100, 100, 100, 0.2);
+  text-align: center;
+  border: 2px solid #2885a9;
+  padding: 14px 10px;
+  width: 300px;
+  outline: none;
+  border-radius: 24px;
+  color: white;
+  transition: 0.4s;
+}
+
+.chatbar input:focus {
+  border: 2px solid #2ecc71;
+}
+
+.chatbar button {
+  position: absolute;
+  left: 375px;
+  border: 0;
+  background: #2ecc71;
+  margin: 20px auto;
+  text-align: center;
+  padding: 10px 30px;
+  outline: none;
+  border-radius: 24px;
+  color: white;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.chatbar button:hover {
+  background-color: #57c5f0;
+}
+
+.topChatBar {
+  position: sticky;
+  top: 0;
+  width: 50%;
+  left: 34%;
+  height: 9%;
+  background-color: #353535;
+  z-index: 1;
+  border-bottom: #2885a9 2px solid;
+  color: white;
+  min-height: fit-content;
+}
+
+.chatProfimg img {
+  position: absolute;
+  top: 5%;
+  left: 2%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: 0.25s;
+}
+
+.chatProfimg img:hover {
+  border-radius: 25%;
+}
+
+#chatback {
+  position: absolute;
+  top: 7%;
+  right: 2%;
+  text-decoration: none;
+  color: white;
+  padding: 15px 22px;
+  border: 3.5px solid white;
+  border-radius: 30px;
+  font-size: 15px;
+  transition: 0.5s;
+}
+
+#chatback:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-color: #2ecc71;
+}
+
+.chatname {
+  position: absolute;
+  left: 13%;
+  top: 35%;
+  font-size: 20px
+}
+
+.HOME2 {
+  position: absolute;
+  width: 50%;
+  height: 81%;
+  left: 34%;
+  background-color: #AEB6C6;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.bubbles {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+}
+
+.bubbles div{
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  animation: bubly 4s linear infinite;
+}
+
+div .gleam {
+  height: 10px;
+  width: 10px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 20%;
+  right: 20%;
+}
+
+.bubbles div:nth-child(1) {
+  top: 20%;
+  left: 20%;
+  animation: bubly 8s linear infinite;
+}
+
+.bubbles div:nth-child(2) {
+  top: 50%;
+  left: 60%;
+  animation: bubly 4s linear infinite;
+  animation-delay: 2s;
+}
+
+.bubbles div:nth-child(3) {
+  top: 20%;
+  left: 90%;
+  animation: bubly 6s linear infinite;
+  animation-delay: 1s;
+}
+
+.bubbles div:nth-child(4) {
+  top: 10%;
+  left: 70%;
+  animation: bubly 4.5s linear infinite;
+  animation-delay: 3s;
+}
+
+.bubbles div:nth-child(5) {
+  top: 70%;
+  left: 35%;
+  animation: bubly 7s linear infinite;
+  animation-delay: 0.5s;
+}
+
+.bubbles div:nth-child(6) {
+  top: 17%;
+  left: 7%;
+  animation: bubly 5s linear infinite;
+  animation-delay: 2s;
+}
+
+.bubbles div:nth-child(7) {
+  top: 58%;
+  left: 20%;
+  animation: bubly 7s linear infinite;
+  animation-delay: 3s;
+}
+
+.bubbles div:nth-child(8) {
+  top: 15%;
+  left: 50%;
+  animation: bubly 4s linear infinite;
+  animation-delay: 0s;
+}
+
+.bubbles div:nth-child(9) {
+  top: 60%;
+  left: 80%;
+  animation: bubly 9s linear infinite;
+  animation-delay: 0s;
+}
+
+.bubbles div:nth-child(10) {
+  top: 7%;
+  left: 30%;
+  animation: bubly 5s linear infinite;
+  animation-delay: 0.7s;
+}
+
+
+@keyframes bubly {
+  0% {
+    transform: scale(0) translateY(0) rotate(70deg);
+    visibility: visible;
+  }
+  100% {
+    transform: scale(1.3) translateY(-100px) rotate(360deg);
+  }
+}
+
+.bubbles2 {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+}
+
+.bubbles2 div{
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  animation: bubly 4s linear infinite;
+}
+
+.bubbles2 div:nth-child(1) {
+  top: 90%;
+  left: 3%;
+  animation: bubly 8s linear infinite;
+  animation-delay: 1s;
+}
+
+.bubbles2 div:nth-child(2) {
+  top: 50%;
+  left: 10%;
+  animation: bubly 5s linear infinite;
+  animation-delay: 2s;
+}
+
+.bubbles2 div:nth-child(3) {
+  top: 20%;
+  left: 90%;
+  animation: bubly 6s linear infinite;
+  animation-delay: 1s;
+}
+
+.bubbles2 div:nth-child(4) {
+  top: 70%;
+  left: 85%;
+  animation: bubly 4.5s linear infinite;
+  animation-delay: 3s;
+}
+
+.bubbles2 div:nth-child(5) {
+  top: 10%;
+  left: 6%;
+  animation: bubly 7s linear infinite;
+  animation-delay: 1s;
+}
+
+.☰ {
+  visibility: hidden;
+}
+
+.tooSMALL {
+  visibility: visible;
+}
+
+.bgColour {
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: #2FAEE4;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 15px;
+  width: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.bgColour span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.bgColour span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.bgColour:hover span {
+  padding-right: 25px;
+}
+
+.bgColour:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.sideprofile p {
+  margin-left: 15px;
+}
+
+#fileSelect {
+  margin-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.colourList {
+  font-size: 20px;
+}
+
+.red {
+  position: absolute;
+  text-decoration: none;
+  width: 120px;
+  height: 120px;
+  background-color: #E45537;
+  color: white;
+  line-height: 120px;
+  top: 20%;
+  left: 5%;
+}
+.yellow {
+  position: absolute;
+  text-decoration: none;
+  width: 120px;
+  height: 120px;
+  background-color: #FFFF99;
+  color: black;
+  line-height: 120px;
+  top: 20%;
+  left: 40%;
+}
+.pink {
+  position: absolute;
+  text-decoration: none;
+  width: 120px;
+  height: 120px;
+  background-color: #FFCCFF;
+  color: white;
+  line-height: 120px;
+  top: 20%;
+  left: 75%;
+}
+.aqua {
+  position: absolute;
+  text-decoration: none;
+  width: 120px;
+  height: 120px;
+  background-color: #37ABE4;
+  color: white;
+  line-height: 120px;
+  top: 50%;
+  left: 5%;
+}
+.blue {
+  position: absolute;
+  text-decoration: none;
+  width: 120px;
+  height: 120px;
+  background-color: #0080FF;
+  color: white;
+  line-height: 120px;
+  top: 50%;
+  left: 40%;
+}
+.default {
+  position: absolute;
+  text-decoration: none;
+  width: 120px;
+  height: 120px;
+  background-image: url(img/indexfish.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  line-height: 120px;
+  top: 50%;
+  left: 75%;
+}
+
+.HelpMe {
+  position: absolute;
+  width: 65%;
+  height: 80%;
+  background-color: white;
+  top: 10%;
+  left: 17.5%;
+  border-radius: 5%;
+  font-size: 20px;
+}
+
+.HelpMe p {
+  margin-left: 50px;
+  max-width: 85%;
+  font-family: 'Amiri', serif;
+}
+
+.HelpMe h2 {
+  font-size: 50px;
+  font-family: 'Bubblegum Sans', cursive;
+  margin: 35px;
+  margin-bottom: 20px;
+  border-bottom: solid slategray 1px;
+}
+
+.backBlack {
+  background-color: lightslategray;
+}
+
+.headerHelp {
+  font-weight: 800;
+  text-decoration: underline;
+  color: #2885a9;
+  margin-bottom: 10px;
+}
+
+#lmPage p {
+  font-size: 18px;
+  font-family: 'Amiri', serif;
+  font-weight: 400;
+  max-width: 90%;
+  margin-left: 5%;
+}
+
+#TandC p {
+  font-size: 18px;
+  font-family: 'Amiri', serif;
+  max-width: 90%;
+  margin-left: 5%;
+}
+
+.agree {
+  position: relative;
+  bottom: -25px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Fjalla One", sans-serif;
+  color: white;
+  background-color: #29C646;
+  padding: 15px 35px 15px 35px;
+  border-radius: 15px;
+}
+
+/*responsiveness!*/
+
+@media only screen and (max-width: 1000px) {
+  .HOME, .HOME2, .chatbar, .topChatBar {
+    width: 70%;
+    left: 25%;
+  }
+  .hSideBar {
+    width: 20%;
+    left: 5%;
+  }
+  .ceop {
+    /*ceop button styling*/
+    width: 100px;
+    height: 30px;
+  }
+  .ceop2 {
+    /*ceop button positioning*/
+    position: fixed;
+  }
+  .namehello {
+    font-size: 60px;
+  }
+  .parhello {
+    font-size: 15px
+  }
+  .profileP2 {
+    width: 34%;
+  }
+}
+
+@media only screen and (max-width: 725px) {
+  h1 {
+    /*title*/
+    font-size: 75px;
+    line-height: 100px;
+  }
+  .learn li a {
+    /*Learn more button styling*/
+    font-size: 10px;
+  }
+  .back {
+    font-size: 10px;
+  }
+  .signup {
+    width: 400px;
+    height: 500px;
+    margin-top: -250px;
+    margin-left: -200px;
+  }
+  .HOME, .HOME2, .chatbar, .topChatBar {
+    width: 80%;
+    left: 20%;
+  }
+  .hSideBar {
+    width: 20%;
+    left: 0%;
+  }
+  .user {
+    font-size: 13px;
+    padding: 30px 5px 30px 5px;
+  }
+  .homeNAV ul li a {
+    /*Side bar buttons*/
+    margin: 30px auto;
+    padding: 15px 4px;
+    font-size: 12px;
+    width: 60%;
+  }
+  .hSideBar h2 {
+    font-size: 30px;
+    padding: 30px 5px 10px 5px;
+  }
+  .ceop {
+    /*ceop button styling*/
+    width: 100px;
+    height: 30px;
+  }
+  .contact {
+    line-height: 34px;
+  }
+  .filters input {
+    width: 140px;
+    font-size: 12px;
+    right: 80px;
+  }
+
+  .filters button {
+    font-size: 12px;
+  }
+  
+  .filtFriends {
+    font-size: 12px;
+  }
+  .chatbar button {
+    left: 260px;
+  }
+  .chatbar input {
+    width: 200px;
+    padding: 2.5%;
+  }
+  .chatname {
+    left: 20%;
+  }
+  .topChatBar img {
+    width: 50px;
+    height: 50px;
+  }
+  .red {
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+  }
+  .yellow {
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+  }
+  .blue {
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+  }
+  .aqua {
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+  }
+  .pink {
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+  }
+  .default {
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+  }
+  .modal-content h2 {
+    font-size: 22px;
+  }
+  #lmPage {
+    height: 80%;
+    top: 40%;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  h1 {
+    /*title*/
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .indexNAV ul li a {
+    /*Signup and login buttons*/
+    font-size: 10px;
+  }
+  .signup {
+    width: 250px;
+    height: 350px;
+    margin-top: -160px;
+    margin-left: -125px;
+  }
+  .signup h2 {
+    /*styling the signup & login title*/
+    line-height: 50px;
+    font-size: 20px;
+  }
+
+  .signup input[type="text"],
+  .signup input[type="password"] {
+    /*input box styling for sign up and login*/
+    margin: 15px auto;
+    padding: 12px 5px;
+    width: 150px;
+  }
+  .signup input[type="text"]:focus,
+  .signup input[type="password"]:focus {
+    /*animation for input boxes*/
+    width: 190px;
+  }
+  .signup button[type="submit"] {
+    /*the submit buttons for signup and login*/
+    margin: 10px auto;
+    padding: 10px 30px;
+  }
+  #already {
+    visibility: hidden;
+  }
+  .ceop {
+    visibility: hidden;
+  }
+  .contact {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .filters input {
+    width: 110px;
+    font-size: 10px;
+    right: 70px;
+  }
+
+  .filters button {
+    font-size: 10px;
+    right: 12px;
+  }
+  
+  .filtFriends {
+    font-size: 10px;
+  }
+  .hSideBar {
+    visibility: hidden;
+  }
+  .HOME, .HOME2, .chatbar, .topChatBar {
+    width: 100%;
+    left: 0%;
+  }
+  .propics {
+    width: 90%;
+    left: 3.5%;
+  }
+  .hSideBar2 {
+    z-index: 10;
+    position: absolute;
+    height: 100%;
+    background-color: #353535;
+    width: 40%;
+    left: 0%;
+  }
+  .hSideBar2 h2 {
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+  .homeNAV ul li a {
+    margin-top: 5px;
+  }
+  .☰ {
+    visibility: visible;
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    padding-top: 5%;
+    padding-left: 2%;
+  }
+  .chatbar button {
+    left: 225px;
+    margin: 22px auto;
+    padding: 5px 15px;
+    border-radius: 24px;
+  }
+  .chatbar input {
+    width: 175px;
+  }
+  #chatback {
+    top: 20%;
+    right: 10%;
+    padding: 9px 20px;
+    border: 2px solid white;
+    border-radius: 30px;
+    font-size: 10px;
+  }
+  .proftitle {
+    visibility: hidden;
+  }
+  .namehello {
+    font-size: 25px;
+    top: 8%;
+  }
+  .parhello {
+    visibility: hidden;
+  }
+  .profileP {
+    top: 20%;
+    width: 90%;
+    height: 60%;
+  }
+  .account {
+    font-size: 15px;
+    line-height: 40px;
+  }
+  .editAccount p {
+    font-size: 14px;
+  }
+  .editAccount input[type="text"], .editAccount input[type="password"] {
+    width: 120px;
+    height: 10px;
+  }
+  .editAccount button[type="submit"] {
+    width: 75px;
+    height: 30px;
+  }
+  .editAccount input[type="text"]:focus {
+    /*animation for input boxes*/
+    width: 140px;
+  }
+  
+  .editAccount input[type="password"]:focus {
+    /*animation for input boxes*/
+    width: 140px;
+  }
+  .profileP2{
+    top: 85%;
+    height: 40%;
+    width: 90%;
+  }
+  .profpics {
+    top: 2%;
+    right: 2%;
+  }
+  .profpics img {
+    width: 100px;
+    height: 100px;
+  }
+  .editAccount button[type="submit"] {
+    /*the submit buttons for signup and login*/
+    margin: 10px auto;
+    padding: 7px 16px;
+    border-radius: 24px;
+  }
+  .sideprofile {
+    position: relative;
+    top: 5%;
+  }
+  .modal-content h2 {
+    font-size: 14px;
+  }
+  .colourList {
+    visibility: hidden;
+  }
+  .HelpMe {
+    width: 80%;
+    height: 820px;
+    border-radius: 2%;
+    left: 10%;
+    top: 13%;
+    
+  }
+  .HelpMe h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+  .HelpMe p {
+    font-size: 15px;
+    margin-left: 30px;
+  }
+  #lmPage {
+    height: 500px;
+    top: 250px;
+  }
+  #lmPage h2 {
+    font-size: 16px;
+  }
+  #lmPage p {
+    font-size: 14px;
+  }
+  #ReportInput {
+    width: 150px;
+  }
+  #TandC {
+    height: 90%;
+  }
+  #TandC p {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #tooSMALL {
+    visibility: hidden;
+  }
+}
